@@ -1,4 +1,4 @@
-# greg
+# greg [![Go](https://github.com/f01c33/greg/actions/workflows/go.yml/badge.svg)](https://github.com/f01c33/greg/actions/workflows/go.yml)
 The number one (don't quote me on that) simple and fast open port scanner
 
 # usage
