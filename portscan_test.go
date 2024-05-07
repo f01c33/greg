@@ -4,7 +4,7 @@ import (
 	"net"
 	"testing"
 
-	"github.com/cauefcr/greg"
+	"github.com/f01c33/greg"
 )
 
 func TestScanner(T *testing.T) {

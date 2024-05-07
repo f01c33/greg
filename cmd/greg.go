@@ -8,7 +8,7 @@ import (
 	"time"
 
 	ranges "github.com/activeshadow/libminimega/ranges"
-	greg "github.com/cauefcr/greg"
+	greg "github.com/f01c33/greg"
 	"github.com/jessevdk/go-flags"
 	// cidr "github.com/knownsec/Minitools-cidrgen"
 )

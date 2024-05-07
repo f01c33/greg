@@ -4,7 +4,6 @@ go 1.22.2
 
 require (
 	github.com/activeshadow/libminimega v0.0.0-20190412123224-5384445d4b63
-	github.com/cauefcr/greg v0.0.0-20210423094543-fa96eb76ce02
 	github.com/jessevdk/go-flags v1.5.0
 )
 
