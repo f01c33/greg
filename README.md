@@ -8,9 +8,8 @@ greg 127.0.0.1(/24 optional cidr range) -p 666 (-p [22-8000] can use multiple ti
 ```
 
 # install
-```
-go get github.com/cauefcr/greg/greg
-go install github.com/cauefcr/greg/greg
+```bash
+go install github.com/f01c33/greg/greg@latest
 ```
 
 # to-do (hack away)
