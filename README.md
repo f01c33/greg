@@ -12,6 +12,9 @@ greg 127.0.0.1(/24 optional cidr range) -p 666 (-p [22-8000] can use multiple ti
 go install github.com/f01c33/greg/greg@latest
 ```
 
+# Comparison with nmap
+![comparison](./comparison.png)
+
 # to-do (hack away)
 
 [ ] verbose/non-verbose modes
@@ -25,3 +28,4 @@ go install github.com/f01c33/greg/greg@latest
 [ ] csv
 
 [ ] your cool idea
+
