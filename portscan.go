@@ -15,7 +15,7 @@ func PortScan(ips, ports []string) chan string {
 	wg := sync.WaitGroup{}
 	// feeding the workers
 	wg.Add(1)
-	go func(c, done chan string, wg *sync.WaitGroup) {
+	go func(c chan string, wg *sync.WaitGroup) {
 		for _, ip := range ips {
 			for _, p := range ports {
 				c <- ip + ":" + p
@@ -23,7 +23,7 @@ func PortScan(ips, ports []string) chan string {
 		}
 		close(c)
 		wg.Done()
-	}(c, done, &wg)
+	}(c, &wg)
 	// start workers
 	for i := 0; i < int(math.Sqrt(float64(len(ips)*len(ports)))); i++ {
 		wg.Add(1)

@@ -18,7 +18,10 @@ func TestScanner(T *testing.T) {
 		if err != nil {
 			T.Error(err)
 		}
-		conn.Write([]byte("the game"))
+		_, err = conn.Write([]byte("the game"))
+		if err != nil {
+			T.Error(err)
+		}
 		conn.Close()
 	}()
 	for addr := range greg.PortScan([]string{"127.0.0.1"}, ports) {
